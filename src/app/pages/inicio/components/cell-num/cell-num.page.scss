@@ -1,0 +1,44 @@
+.numssec{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.nums{
+  width: 326px;
+  height: 56px;
+  border: none;
+  color: #AAAAAA;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow:  5px 5px 15px #e3e3e3,
+             -5px -5px 15px #ffffff;
+}
+.nums.active {
+  color: #000000;
+}
+.nums-btns{
+  margin: 48px 0px;
+}
+.btn-calc{
+  text-align: center;
+  width: 56px;
+  height: 56px;
+  color: var(--green-text);
+  font-size: 32px;
+  font-weight: 500;
+}
+.btn-next{
+  width: 56px;
+  height: 56px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white-text);
+  background-color: var(--btn-cancel);
+  border-radius: 50%;
+}
+.btnsend{
+  background-color: var(--primary);
+}

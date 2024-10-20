@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        class="rightBtn"
+        defaultHref="/"
+        color="success"
+        text=" "
+        mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title class="uppercase header-text ion-text-center">{{ title }}</ion-title>
+  </ion-toolbar>
+  <form [formGroup]="radioBtn" class="radiogroup">
+    <ion-radio-group [formControlName]="'radioOne'" (ionChange)="handleChange($event)">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-radio
+            aria-label="cell-num"
+            color="success"
+            value="cell-num">
+          </ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-radio-group>
+    <div class="line"></div>
+    <ion-radio-group [formControlName]="'radioTwo'" (ionChange)="handleChange($event)">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-radio
+            aria-label="account-details"
+            color="success"
+            value="account-details">
+          </ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-radio-group>
+    <div class="line"></div>
+    <ion-radio-group [formControlName]="'radioTre'" (ionChange)="handleChange($event)">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-radio
+            aria-label="terms"
+            color="success"
+            value="terms">
+          </ion-radio>
+        </ion-item>
+      </ion-list>
+    </ion-radio-group>
+  </form>
+</ion-header>

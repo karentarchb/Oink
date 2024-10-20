@@ -1,0 +1,18 @@
+.formcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.formInputs{
+  margin-top: 16px;
+  width: 311px;
+  margin-top: -20px;
+}
+::ng-deep.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+
+}
+.full-width{
+  width: 100%;
+}

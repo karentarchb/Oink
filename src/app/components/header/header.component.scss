@@ -1,0 +1,22 @@
+.rightBtn{
+  position: absolute;
+  padding-left: 25px;
+}
+.header-text{
+  color: var(--green-text);
+  font-weight: bold;
+  font-size: 16px;
+}
+.radiogroup{
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-text);
+}
+.line{
+  height: 1px;
+  background-color: var(--grey-text);
+  width: 70px;
+  margin: 0px 10px;
+}

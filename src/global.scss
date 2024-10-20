@@ -1,0 +1,117 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --primary: #1EEA00;
+  --green-text: #004B40;
+  --grey-text:#757575;
+  --dark-text: #212121;
+  --btn-cancel: #D3D3D3;
+  --white-text: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-content{
+  border: none;
+  width: 326px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+.send{
+  color: var(--green-text);
+  background-color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.send[disabled] {
+  background-color: var(--btn-cancel);
+  color: var(--white-text);
+  cursor: not-allowed;
+}
+
+.other{
+  color: var(--white-text);
+  background-color: var(--green-text);
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px 24px 0px;
+}
+.oink{
+  width: 72.35px;
+  height: 64px;
+  margin-right: 23px;
+}
+.textT{
+  width: 231px;
+  height: 19px;
+  font-size: 16px;
+  color: var(--green-text);
+  font-weight: bold;
+}
+.textP{
+  width: 231px;
+  height: 38px;
+  font-size: 16px;
+  color: var(--grey-text);
+  text-align: left;
+}
+.lineGreen{
+  height: 1px;
+  background-color: var(--primary);
+  width: 326px;
+  margin: 8px 0px;
+}
+.load{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}

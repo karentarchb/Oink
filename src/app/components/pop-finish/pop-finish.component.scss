@@ -1,0 +1,34 @@
+
+.cajita{
+  display: flex;
+  margin: 0 auto;
+  width: 101px;
+  height: 80px;
+}
+.ipddng{
+  margin-top: 48px;
+  margin-bottom: 22px;
+}
+.contenttext{
+  margin: 0 auto;
+  text-align: center;
+}
+.txtpara{
+  margin-top: 12px;
+  width: 221px;
+  height: 61px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  margin-bottom: 32px;
+}
+.btn-finish{
+  width: 221px;
+  height: 36px;
+  background: var(--primary);
+  color: var(--green-text);
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 40px;
+}
