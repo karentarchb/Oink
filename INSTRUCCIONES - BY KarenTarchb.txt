@@ -1,0 +1,91 @@
+Estas son las instrucciones 
+para poder construir la aplicación de Oink como la he nombrado.
+
+He utilizado Capacitor.
+
+Antes de comenzar, debes asegurarte de tener instalados y configurados los siguientes componentes:
+
+Node.js y npm: Para manejar las dependencias y ejecutar comandos npm.
+Ionic CLI: Para utilizar comandos específicos de Ionic.
+	-	npm install -g @ionic/cli
+Capacitor CLI: Se instala como dependencia de tu proyecto.
+Android Studio: Para compilar y generar el APK.
+Java Development Kit (JDK): Necesario para compilar aplicaciones Java.
+Gradle: Generalmente se incluye con Android Studio.
+
+* Construir el Proyecto Ionic
+
+Primero, necesitarás generar la versión de producción de tu aplicación Ionic. Esto compila tu código y lo optimiza para producción.
+
+Desde el directorio raíz de tu proyecto, ejecuta:
+	-	ionic build
+Este comando creará una carpeta www en tu proyecto con los archivos compilados de tu aplicación.
+
+
+* Instalar Capacitor y Añadir la Plataforma Android
+
+Si aún no lo has hecho, necesitas instalar Capacitor y añadir la plataforma Android.
+
+Instalar Capacitor
+	-	npm install @capacitor/core @capacitor/cli
+Inicializar Capacitor
+Si es la primera vez que usas Capacitor en este proyecto, inicialízalo:
+	-	npx cap init
+Durante la inicialización, se te pedirá:
+
+Nombre de la aplicación: El nombre que deseas para tu aplicación.
+ID del paquete: Un identificador único en formato de dominio inverso, por ejemplo, com.miempresa.miapp.
+Añadir la Plataforma Android.
+	-	npx cap add android
+Este comando creará un directorio android en tu proyecto con todos los archivos necesarios para la plataforma Android.
+
+
+* Sincronizar tu Proyecto con Capacitor
+
+Después de construir tu aplicación y añadir la plataforma Android, necesitas sincronizar los archivos web con el proyecto nativo de Android.
+	-	npx cap copy
+O, para asegurar que todo esté sincronizado, incluyendo los plugins:
+
+	-	npx cap sync
+Este comando copia los archivos generados en www al proyecto de Android y sincroniza los plugins de Capacitor.
+
+
+* Abrir el Proyecto en Android Studio
+
+Para generar el APK, necesitas abrir el proyecto en Android Studio.
+
+Puedes hacerlo con el siguiente comando:
+	-	npx cap open android
+Este comando abrirá Android Studio con tu proyecto Android listo para ser compilado.
+
+Alternativamente, puedes abrir Android Studio manualmente y abrir el proyecto ubicado en el directorio android de tu proyecto.
+
+Desde Android studio podremos generar el Generar el APK Firmado para el lanzamiento ó Generar un APK de Depuración.
+En Android Studio:
+
+Ve al menú Build (Compilar).
+Selecciona Build Bundle(s) / APK(s).
+Haz clic en Build APK(s).
+
+ubicación de la APK prueba contruida para esta prueba: -- android\app\build\outputs\apk\debug --
+
+En el otro caso debemos configurar clave de firma
+debes crear una.
+
+En Android Studio, ve al menú Build.
+
+Selecciona Generate Signed Bundle / APK....
+
+En la ventana emergente, elige APK y haz clic en Next.
+
+En Key store path, haz clic en Create new....
+
+Completa la información requerida:
+
+Key store path: La ruta donde deseas guardar tu archivo de almacén de claves (.jks).
+Password: Contraseña para proteger el almacén de claves.
+Key alias: Un alias para tu clave.
+Key password: Contraseña para la clave.
+Información de certificado: Nombre, organización, país, etc.
+Haz clic en OK para crear el almacén de claves.
+Y asi ya ir a generar el apk firmado

@@ -19,7 +19,7 @@ export class TermsPage {
       accountDetails: accountDetails ? JSON.parse(accountDetails) : null,
     };
 
-    console.log('Datos para enviar:', dataToSend);
+    console.log('Datos del registro exitoso:', dataToSend);
 
     localStorage.removeItem('phoneNumber');
     localStorage.removeItem('accountForm');
