@@ -1,0 +1,6 @@
+io.ionic.starter.test.app-core-1.5.0-0 C:\Users\USER\.gradle\caches\8.11-rc-1\transforms\3c58e703c060026dbdbd3b5bdb2ab521\transformed\core-1.5.0\res
+io.ionic.starter.test.app-annotation-experimental-1.3.0-1 C:\Users\USER\.gradle\caches\8.11-rc-1\transforms\eed0aae649b2ed72065f8ea963d970dc\transformed\annotation-experimental-1.3.0\res
+io.ionic.starter.test.app-androidTest-2 C:\Users\USER\Documents\AAA Principal proyect - RECOVERY\Ionic\coink-app\android\app\build\generated\res\resValues\androidTest\debug
+io.ionic.starter.test.app-mergeDebugAndroidTestResources-3 C:\Users\USER\Documents\AAA Principal proyect - RECOVERY\Ionic\coink-app\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+io.ionic.starter.test.app-mergeDebugAndroidTestResources-4 C:\Users\USER\Documents\AAA Principal proyect - RECOVERY\Ionic\coink-app\android\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+io.ionic.starter.test.app-merged_res-5 C:\Users\USER\Documents\AAA Principal proyect - RECOVERY\Ionic\coink-app\android\app\build\intermediates\merged_res\debugAndroidTest
